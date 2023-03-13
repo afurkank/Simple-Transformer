@@ -1,5 +1,5 @@
 # Transformer
-This is a very simplistic and from scratch implementation of a transformer model based on the paper "Attention Is All You Need".
+This is a very simple and from scratch implementation of a transformer model based on the paper "Attention Is All You Need".
 
 It is implemented for machine translation tasks. The model takes only the tokenized source and target as inputs for training. Therefore, creating masks or implementing any sort of embedding/positional encoding is not necessary as they are all done inside the model.
 
