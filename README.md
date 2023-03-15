@@ -11,11 +11,11 @@ Training uses around 4 GB of VRAM with batch size of 32, sequence length of 64 a
 
 Some observations about training:
 
-> Using Adam as optimizer rather than SGD yields much faster convergence and better generalization.
+**Using Adam as optimizer rather than SGD yields much faster convergence and better generalization.
 
-> I haven't tried any learning rate below 0.0001, but when lr is higher than that the model cannot learn as good.
+**I haven't tried any learning rate below 0.0001, but when lr is higher than that the model cannot learn as good.
 
-> Increasing the number of layers from 3 to 6 did not result in better generalization. Considering the slower training and more VRAM usage of increased layer number, I do not think it is necessary to go up to 6 layers for my model, at least with as small training dataset as I used. However, I did not try 4 or 5 as number of layers; maybe they can give better results.
+**Increasing the number of layers from 3 to 6 did not result in better generalization. Considering the slower training and more VRAM usage of increased layer number, I do not think it is necessary to go up to 6 layers for my model, at least with as small training dataset as I used. However, I did not try 4 or 5 as number of layers; maybe they can give better results.
 
 # Inference
 
