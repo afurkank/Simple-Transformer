@@ -15,10 +15,10 @@ Some observations about training:
 
 > I haven't tried any learning rate below 0.0001, but when lr is higher than that the model cannot learn as good.
 
-> Increasing the number of layers from 3 to 6 did not result in better generalization. Considering the slower training and more VRAM usage of increased layer number, I do not think it is necessary to go up to 6 layers for my model, at least with as small of a training dataset as I used. However, I did not try 4 or 5 as number of layers; maybe they can give better results.
+> Increasing the number of layers from 3 to 6 did not result in better generalization. Considering the slower training and more VRAM usage of increased layer number, I do not think it is necessary to go up to 6 layers for my model, at least with as small training dataset as I used. However, I did not try 4 or 5 as number of layers; maybe they can give better results.
 
 # Inference
 
 For inference, I used Greedy Decoding as it was the simplest one to implement.
 
-There is a simple example which translates the given German sentence correctly. However, the model produces less accurate outputs as the sentence gets more complicated. I assume training the model with more data can solve this problem. Also, using methods such as Beam Search instead of Greedy Decoding will probably increase the accuracy of the translation as well.
+There is a simple example which translates the given German sentence correctly. However, the model produces less accurate outputs as the sentence gets more complicated. I assume training the model with more data can solve this problem. Also, during translation, using methods such as Beam Search instead of Greedy Decoding will probably increase the accuracy of the translation as well.
