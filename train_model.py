@@ -49,7 +49,7 @@ using the tokenizer which you obtained using the script
 train_tokenizer.py
 """
 PAD_IDX, BOS_IDX, EOS_IDX = 1, 2, 3 # special tokens
-BATCH_SIZE = 32 # batch_size for training, adjust it according to your VRAM capacity
+BATCH_SIZE = 128 # batch_size for training, adjust it according to your VRAM capacity
 SRC_LANGUAGE = 'de' # language to be translated
 TGT_LANGUAGE = 'en' # language the model translates to
 ''' Model Parameters '''
