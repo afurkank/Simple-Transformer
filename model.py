@@ -1,3 +1,29 @@
+"""
+Ahmet Furkan Karacık
+afurkank @ github
+
+You need to install torch, tokenizers, torchtext and torchdata.
+Some versions of torchtext and torchdata may not be compatible
+with certain versions of torch, so please check if your
+torchtext and torchdata are supported for your torch version 
+from these links:
+https://github.com/pytorch/text/blob/main/README.rst
+https://github.com/pytorch/data/blob/main/README.md
+
+In 0.6.0 version of torchdata, there is an issue with the 
+Multi30k DataLoader. It may still be a problem in the future,
+so I suggest you use the following configuration to run this script:
+
+torchdata v0.5.1
+torchtext v0.14.1
+torch     v1.13.1
+
+you can download them like this:
+
+pip install torch==1.13.1 torchtext==0.14.1 torchdata==0.5.1
+pip install tokenizers
+"""
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
