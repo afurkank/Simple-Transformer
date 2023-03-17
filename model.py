@@ -11,7 +11,7 @@ https://github.com/pytorch/text/blob/main/README.rst
 https://github.com/pytorch/data/blob/main/README.md
 
 In 0.6.0 version of torchdata, there is an issue with the 
-Multi30k DataLoader. It may still be a problem in the future,
+DataLoader. It may still be a problem in the future,
 so I suggest you use the following configuration to run this script:
 
 torchdata v0.5.1
@@ -22,6 +22,11 @@ you can download them like this:
 
 pip install torch==1.13.1 torchtext==0.14.1 torchdata==0.5.1
 pip install tokenizers
+
+If you are going to use newer versions, you might need to install
+portalocker like this:
+
+pip install 'portalocker>=2.0.0'
 """
 
 import torch
