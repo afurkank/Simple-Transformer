@@ -39,7 +39,6 @@ from tokenizers.processors import TemplateProcessing
 MAX_LEN = 64
 VOCAB_SIZE = 32768
 UNK_IDX, PAD_IDX, BOS_IDX, EOS_IDX = 0, 1, 2, 3
-BATCH_SIZE = 128
 SRC_LANGUAGE = 'de'
 TGT_LANGUAGE = 'en'
 
